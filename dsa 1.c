@@ -4,10 +4,10 @@
 int linearSearch(int arr[], int n, int key) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == key) {
-            return i;  // Return index if found
+            return i;  
         }
     }
-    return -1;  // Not found
+    return -1;  
 }
 
 // Function for Binary Search (array must be sorted)
@@ -16,7 +16,7 @@ int binarySearch(int arr[], int n, int key) {
     while (low <= high) {
         int mid = (low + high) / 2;
         if (arr[mid] == key) {
-            return mid;  // Found
+            return mid;  
         }
         else if (arr[mid] < key) {
             low = mid + 1;
@@ -25,7 +25,7 @@ int binarySearch(int arr[], int n, int key) {
             high = mid - 1;
         }
     }
-    return -1;  // Not found
+    return -1;  
 }
 
 int main() {
@@ -67,4 +67,5 @@ int main() {
     }
     
     return 0;
+
 }
