@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function for Linear Search
+
 int linearSearch(int arr[], int n, int key) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == key) {
@@ -10,7 +10,7 @@ int linearSearch(int arr[], int n, int key) {
     return -1;  
 }
 
-// Function for Binary Search (array must be sorted)
+
 int binarySearch(int arr[], int n, int key) {
     int low = 0, high = n - 1;
     while (low <= high) {
@@ -69,3 +69,4 @@ int main() {
     return 0;
 
 }
+
