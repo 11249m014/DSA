@@ -10,11 +10,11 @@ int main() {
     int arr[100] = {10, 20, 30, 40, 50};
     int n = 5, pos, key, cap = 100, i;
 
-    // Display initial array
+
     printf("Array: ");
     show(arr, n);
 
-    // Search operation
+   
     key = 30;
     for (i = 0; i < n && arr[i] != key; i++);
     if (i < n)
@@ -22,7 +22,7 @@ int main() {
     else
         printf("%d Not found\n", key);
 
-    // Insert operation at index 2
+
     pos = 2;
     if (n < cap) {
         for (i = n; i > pos; i--)
@@ -33,7 +33,7 @@ int main() {
     printf("After insertion: ");
     show(arr, n);
 
-    // Delete operation at index 3
+
     pos = 3;
     if (pos >= 0 && pos < n) {
         for (i = pos; i < n - 1; i++)
@@ -55,4 +55,5 @@ int main() {
 
     return 0;
 }
+
 }
